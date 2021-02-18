@@ -35,31 +35,33 @@ Belarusian State Technological Uneversity, Faculty of Technology and Technology 
  https://github.com/di-shykh/RssReader
 
   Implemented functionality:
-  * search for rss feed
-  * saving this feed in database
-  * displaying articles general list/ by category/ by source
-  * search by articles
-  * displaying an article preview, go to the source site
-  * adding an article to the list for reading (read later)
-  * share article in social networks
-  * change user settings (color scheme, font)
-  * edit source (change name, category, unsubscribe)
 
- 2. Calendar app (HTML, CSS, Less, Javascript, jQuery)
- https://github.com/di-shykh/calendar
+    * search for rss feed
+    * saving this feed in database
+    * displaying articles general list/ by category/ by source
+    * search by articles
+    * displaying an article preview, go to the source site
+    * adding an article to the list for reading (read later)
+    * share article in social networks
+    * change user settings (color scheme, font)
+    * edit source (change name, category, unsubscribe)
 
- Implemented functionality:
-  * displaying a calendar with saved events (events are saved in the browser’s local      storage)
-  * adding new events, editing and deleting events
-  * event search
+2. Calendar app (HTML, CSS, Less, Javascript, jQuery)
+https://github.com/di-shykh/calendar
 
- 3. Quiz app. Psychological tests for children (HTML, CSS, Javascript)
- https://github.com/di-shykh/psihological_tests_for_kids
+  Implemented functionality:
+  
+    * displaying a calendar with saved events (events are saved in the browser’s local      storage)
+    * adding new events, editing and deleting events
+    * event search
 
- 4. E-commerce web-site layout (HTML5, CSS3, Flexbox) 
- https://github.com/di-shykh/site-layout
+3. Quiz app. Psychological tests for children (HTML, CSS, Javascript)
+https://github.com/di-shykh/psihological_tests_for_kids
 
- 5. The diploma project for the automated calculation of parts and the receipt of reports for the production enterprise (C#, Windows Forms, MS SQL)
+4. E-commerce web-site layout (HTML5, CSS3, Flexbox) 
+https://github.com/di-shykh/site-layout
+
+5. The diploma project for the automated calculation of parts and the receipt of reports for the production enterprise (C#, Windows Forms, MS SQL)
 
 ### Work experience:
 
@@ -72,7 +74,8 @@ Belarusian State Technological Uneversity, Faculty of Technology and Technology 
   Engineered interiors and furnishings for the upper class customers. Finished objects in Moscow, St. Petersburg, Monaco, Geneva, Montenegro, Georgia.
 
 2. 2012-2014 engineer design technologist at “Amkvadro”
-Engineered furniture, doors and interiors for the upper class customers.
+
+  Engineered furniture, doors and interiors for the upper class customers.
 
 3. 2007-2012 engineer design technologist at “Delta”
 
