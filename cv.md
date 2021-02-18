@@ -1,6 +1,6 @@
 # Diana Shykh
 
-![my_photo](~img.jpg)
+<!--![my_photo](img.jpg)-->
 
 Belarus, Minsk,
 Mobile phone: +375-29-504-28-37,
