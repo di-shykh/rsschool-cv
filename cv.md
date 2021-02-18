@@ -34,26 +34,24 @@ Belarusian State Technological Uneversity, Faculty of Technology and Technology 
 1. Single Page App RSS Reader (HTML, CSS, JavaScript, Vue.js, Bootstrap, Firebase)
  https://github.com/di-shykh/RssReader
 
-  Implemented functionality:
-
-    * search for rss feed
-    * saving this feed in database
-    * displaying articles general list/ by category/ by source
-    * search by articles
-    * displaying an article preview, go to the source site
-    * adding an article to the list for reading (read later)
-    * share article in social networks
-    * change user settings (color scheme, font)
-    * edit source (change name, category, unsubscribe)
+Implemented functionality:
+  * search for rss feed
+  * saving this feed in database
+  * displaying articles general list/ by category/ by source
+  * search by articles
+  * displaying an article preview, go to the source site
+  * adding an article to the list for reading (read later)
+  * share article in social networks
+  * change user settings (color scheme, font)
+  * edit source (change name, category, unsubscribe)
 
 2. Calendar app (HTML, CSS, Less, Javascript, jQuery)
 https://github.com/di-shykh/calendar
 
-  Implemented functionality:
-  
-    * displaying a calendar with saved events (events are saved in the browser’s local      storage)
-    * adding new events, editing and deleting events
-    * event search
+  Implemented functionality: 
+  * displaying a calendar with saved events (events are saved in the browser’s local      storage)
+  * adding new events, editing and deleting events
+  * event search
 
 3. Quiz app. Psychological tests for children (HTML, CSS, Javascript)
 https://github.com/di-shykh/psihological_tests_for_kids
