@@ -1,0 +1,16 @@
+html{
+  background: #fff;
+  line-height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  color: black;
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  max-width: 1200px;
+}
