@@ -5,6 +5,8 @@ body{
    max-width: 1024px;
    margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-direction:column;
  }
  /*styles for header*/
  header{
@@ -104,4 +106,24 @@ section h2, #work-experience{
 }
 #education li{
   padding-bottom: 1rem;
+}
+/*media queries*/
+@media screen and (max-width: 800px){
+  #logo{
+    display: none;
+  }
+}
+@media screen and (max-width: 630px){
+  header, .contacts ul{
+    flex-direction:column;
+  }
+  footer{
+    font-size: 2rem;
+  }
+  main{
+    flex-direction: column;
+  }
+  .skills-wrap{
+    min-width: 100%;
+  }
 }
