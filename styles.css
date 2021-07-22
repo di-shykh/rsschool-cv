@@ -10,6 +10,7 @@ body{
  header{
    display: flex;
    justify-content: center;
+   line-height: 1.5;
  }
  #logo{
    background-color: rgba(231, 227, 227, 0.877);
@@ -26,7 +27,6 @@ body{
  .contacts h1{
    font-size: 3rem;
    font-weight:500;
-   margin-bottom: 0;
  }
  .contacts h3{
    font-weight: lighter;
@@ -38,7 +38,6 @@ body{
    display: flex;
    list-style: none;
    padding-left: 0;
-   margin-bottom: 0;
  }
  .contacts li{
    display: flex;
@@ -91,6 +90,9 @@ section{
 }
 section h2, #work-experience{
   text-decoration: underline;
+}
+#work-experience{
+  margin: 1rem 0;
 }
 .skills-wrap{
   max-width: 250px;
