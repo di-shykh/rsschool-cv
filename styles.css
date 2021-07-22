@@ -1,4 +1,7 @@
- body{
+*{
+  margin: 0;
+}
+body{
    max-width: 1024px;
    margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +14,7 @@
  #logo{
    background-color: rgba(231, 227, 227, 0.877);
    padding: 40px;
+   max-width: 250px;
  }
  .contacts{
   display: flex;
@@ -52,12 +56,13 @@
  }
  footer ul{
    display: flex;
-   justify-content:space-around;
+   justify-content:space-between;
    align-items: center;
    flex-direction: row;
    flex-wrap: wrap;
    list-style: none;
    padding-left: 0;
+   margin: 0;
  }
  footer li{
    margin: 1rem;
@@ -65,8 +70,36 @@
  footer a{
    text-decoration: none;
  }
+ footer img{
+   max-width: 250px;
+ }
  .responsive {
   width: 250px;
   max-width: 100%;
   height: auto;
+}
+/*styles for main*/
+main{
+  background-color:rgb(241, 239, 234, 0.5);
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  line-height: 2;
+}
+section{
+  margin: 1rem;
+}
+section h2, #work-experience{
+  text-decoration: underline;
+}
+.skills-wrap{
+  max-width: 250px;
+}
+#education ol{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+#education li{
+  padding-bottom: 1rem;
 }
