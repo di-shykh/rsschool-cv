@@ -5,16 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <title>rsschool-cv</title>
 </head>
 <body>
   <header>
     <div id="logo">
-      <img class="responsive" src="/rsschool-cv/img.jpg" alt="photo">
+      <img class="responsive" src="/img.jpg" alt="photo">
     </div>
     <div class="contacts">
       <div class="header-wrap">
-        <h1>Diana Shykh</h1>
+        <div class="menu-wrap">
+          <h1>Diana Shykh</h1>
+          <div class="container" onclick="changeMenuIcon(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#objective">Objective</a><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#summary">Summary</a><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#skills">Skills</a><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#education">Education</a><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#professional-experience">Professional experience</a><i class="fas fa-chevron-right"></i></li>
+          </ul>
+        </nav>
         <h3>Front-end web developer</h3>
       </div>
       <ul>
@@ -36,11 +56,13 @@
         <p>Goal oriented, life learner, deteminaion to success, pragmatic</p>
       </section>
       <section id="skills">
-        <h2>Skills:</h2>
-        <p><strong>Programming languages and technologies:</strong><br> JavaScript, ES6+, HTML, CSS, XML, JSON, Bootstrap, Vue.js, Firebase Realtime Database, familiar with MS SQL, C#, Windows Forms, Python</p>
-        <p><strong>Tools:</strong><br> Git, Github, VS Code</p>
-        <p><strong>Operating Systems:</strong><br> Linux (Mint, Ubuntu), Dos, MS Windows family Oss</p>
-        <p><strong>Foreign Languages:</strong><br> English - Intermediate</p>
+      <h2>Skills:</h2>
+        <ul>
+          <li><p><strong>Programming languages and technologies:</strong><br> JavaScript, ES6+, HTML, CSS, XML, JSON, Bootstrap, Vue.js, Firebase Realtime Database, familiar with MS SQL, C#, Windows Forms, Python</p></li>
+          <li><p><strong>Tools:</strong><br> Git, Github, VS Code</p></li>
+          <li><p><strong>Operating Systems:</strong><br> Linux (Mint, Ubuntu), Dos, MS Windows family Oss</p></li>
+          <li><p><strong>Foreign Languages:</strong><br> English - Intermediate</p></li>
+        </ul> 
       </section>
       <section id="education">
         <h2>Education:</h2>
@@ -51,34 +73,74 @@
       </section>
     </aside>
     <div class="professional-experience-wrap">
+      <section id="code-example">
+        <h2>Example of my code</h2>
+          <pre>
+            <code>
+              const changeSlide=(direction,e)=>{
+                e.stopPropagation();
+                const sliderHeight=sliderContainer.clientHeight;
+                if(direction==='up'){
+                  activeSlideIndex++;
+                  if(activeSlideIndex>sliderLength-1){
+                    activeSlideIndex=0;
+                  }
+                }
+                else if(direction==='down'){
+                  activeSlideIndex--;
+                  if(activeSlideIndex<0){
+                    activeSlideIndex=sliderLength-1;
+                  }
+                }
+                slideRight.style.transform=`translateY(-${activeSlideIndex*sliderHeight}px)`;
+                slideLeft.style.transform=`translateY(${activeSlideIndex*sliderHeight}px)`;
+              }
+            </code>
+          </pre>
+      </section>
       <section id="professional-experience">
         <h2>Professional experience:</h2>
-        <p><strong>1. Single Page App RSS Reader (HTML, CSS, JavaScript, Vue.js, Bootstrap, Firebase)</strong>
-        <a href="https://github.com/di-shykh/RssReader">https://github.com/di-shykh/RssReader</a>  </p>
-        <p>Implemented functionality:  </p>
-        <ul>
-          <li>search for rss feed</li>
-          <li>saving this feed in database</li>
-          <li>displaying articles general list/ by category/ by source</li>
-          <li>search by articles</li>
-          <li>displaying an article preview, go to the source site</li>
-          <li>adding an article to the list for reading (read later)</li>
-          <li>share article in social networks</li>
-          <li>change user settings (color scheme, font)</li>
-          <li>edit source (change name, category, unsubscribe)</li>
-        </ul>
-        <p><strong>2. Calendar app (HTML, CSS, Less, Javascript, jQuery)</strong>
-        <a href="https://github.com/di-shykh/calendar">https://github.com/di-shykh/calendar</a>  </p>
-        <p>Implemented functionality:   </p>
-        <ul>
-          <li>displaying a calendar with saved events (events are saved in the browser’s local      storage)</li>
-          <li>adding new events, editing and deleting events</li>
-          <li>event search</li>
-        </ul>
-        <p><strong>3. Quiz app. Psychological tests for children (HTML, CSS, Javascript)</strong> 
-        <a href="https://github.com/di-shykh/psihological_tests_for_kids">https://github.com/di-shykh/psihological_tests_for_kids</a>  </p>
-        <p><strong>4. E-commerce web-site layout (HTML5, CSS3, Flexbox)</strong><br><a href="https://github.com/di-shykh/site-layout">https://github.com/di-shykh/site-layout</a>  </p>
-        <p><strong>5. The diploma project for the automated calculation of parts and the receipt of reports for the production enterprise (C#, Windows Forms, MS SQL)</strong>  </p>
+          <div class="app-example">
+            <h4>1. Single Page App RSS Reader (HTML, CSS, JavaScript, Vue.js, Bootstrap, Firebase)</h4>
+            <p><a href="https://github.com/di-shykh/RssReader">https://github.com/di-shykh/RssReader</a></p>
+            <img src="img/rss.jpg" alt="rss-img" class="responsive">
+            <p>Implemented functionality:  </p>
+            <ul>
+              <li>search for rss feed</li>
+              <li>saving this feed in database</li>
+              <li>displaying articles general list/ by category/ by source</li>
+              <li>search by articles</li>
+              <li>displaying an article preview, go to the source site</li>
+              <li>adding an article to the list for reading (read later)</li>
+              <li>share article in social networks</li>
+              <li>change user settings (color scheme, font)</li>
+              <li>edit source (change name, category, unsubscribe)</li>
+            </ul>
+            <a href="https://rss-reader-v1.herokuapp.com/" target="_blank" class="link-wrapper"></a>
+          </div>       
+        <div class="app-example">
+          <h4>2. Custom video-player (HTML, CSS, Javascript)</h4>
+          <p><a href="https://github.com/di-shykh/video-player">https://github.com/di-shykh/video-player</a></p>
+          <img src="img/video-player.jpg" alt="video-player" class="responsive">
+          <a href="https://di-shykh.github.io/video-player/" target="_blank" class="link-wrapper"></a>
+        </div>
+        <div class="app-example">
+          <h4>3. Vertical slider (HTML5, CSS3, JavaScript)</h4>
+          <a href="https://github.com/di-shykh/vertical-slider">https://github.com/di-shykh/vertical-slider</a>
+          <img src="img/vertical-slider.jpg" alt="vertical-slider" class="responsive">
+          <a href="https://di-shykh.github.io/vertical-slider/" target="_blank" class="link-wrapper"></a>
+        </div>
+        <div class="app-example">
+          <h4>4. Calendar app (HTML, CSS, Less, Javascript, jQuery)</h4>
+          <p><a href="https://github.com/di-shykh/calendar">https://github.com/di-shykh/calendar</a></p>
+          <p>Implemented functionality:   </p>
+          <ul>
+            <li>displaying a calendar with saved events (events are saved in the browser’s local      storage)</li>
+            <li>adding new events, editing and deleting events</li>
+            <li>event search</li>
+          </ul>
+          <a href="https://di-shykh.github.io/calendar/" target="_blank" class="link-wrapper"></a>
+        </div>
         <h3 id="work-experience">Work experience:</h3>
         <p><strong>1. 2014-until now engineer design technologist at “Konviga”</strong>  </p>
         <p>During the time at the company, I showed the flexibility of thinking. I engineered a large number of different products from various materials. Demonstrated negotiation abilities, finding a common language with people with diverse backgrounds. Gathered requirements from high profile customers and transferred them to production line workers.  </p>
@@ -99,6 +161,17 @@
       <li><a href="https://rs.school/js/"><img class="responsive" src="https://rs.school/images/rs_school_js.svg" alt="rsscholl-logo"></a></li>
       <li>2021 <a href="https://github.com/di-shykh">Github</a></li>
     </ul>
-  </footer>  
+  </footer> 
+  <script src="https://kit.fontawesome.com/c75b40ff98.js" crossorigin="anonymous"></script>
+   <script>
+     function changeMenuIcon(x) {
+      x.classList.toggle("change");
+      showHideMenu()
+    }
+    function showHideMenu() {
+        const menu=document.querySelectorAll('.menu');
+        menu[0].classList.toggle("show-menu");
+      }
+   </script>
 </body>
 </html>
