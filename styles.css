@@ -39,7 +39,7 @@ body {
    flex-direction: row;
  }
  .contacts li {
-   margin: 1rem;
+   margin: 0.5rem;
  }
  .contacts h2 { margin-bottom: 0.5rem; }
  /*styles for footer*/
@@ -95,26 +95,11 @@ section h2,
   padding-left: 1rem;
 }
 #education li { padding-bottom: 1rem; }
-/*media queries*/
-@media (max-width: 800px) {
-  #logo { display: none; }
-}
-@media (max-width: 630px) {
-  header, 
-  .contacts ul {
-    flex-direction:column;
-  }
-  footer { font-size: 2rem; }
-  main { flex-direction: column; }
-  .skills-wrap{ min-width: 100%; }
-  nav ul{
-    flex-direction: column;
-    width: 200px;
-  }
-  .contacts h2 { 
-    display: inline;
-    margin-right: 0.5rem;
-  }
+.professional-experience-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+  width: calc(100% - 250px);
 }
 /*menu*/
 .container {
@@ -169,6 +154,8 @@ nav li {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  cursor: pointer;
+  white-space: nowrap;
 }
 nav .fas { padding-left: 10px; }
 .show-menu {
@@ -195,8 +182,27 @@ nav .fas { padding-left: 10px; }
   height: 100%;
   z-index: 2;
 }
-.professional-experience-wrap {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1em;
+/*media queries*/
+@media (max-width: 800px) {
+  #logo { display: none; }
 }
+@media (max-width: 630px) {
+  header, 
+  .contacts ul {
+    flex-direction:column;
+  }
+  footer { font-size: 2rem; }
+  main { flex-direction: column; }
+  .skills-wrap{ min-width: 100%; }
+  nav ul{
+    flex-direction: column;
+    width: 200px;
+  }
+  .contacts h2 { 
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  .professional-experience-wrap { width: 100%;}
+}
+
+
