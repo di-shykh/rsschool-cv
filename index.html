@@ -38,10 +38,10 @@
         <h3>Front-end web developer</h3>
       </div>
       <ul>
-        <li><h4>Address: </h4>Belarus, Minsk</li>
-        <li><h4>Mobile phone: </h4>+375-29-504-28-37</li>
-        <li><h4>Email: </h4>di.shykh@gmail.com</li>
-        <li><h4>Github: </h4><a href="https://github.com/di-shykh">https://github.com/di-shykh</a></li>
+        <li><h2><i class="fas fa-map-marker-alt" title="Address:"></i></h2>Belarus, Minsk</li>
+        <li><h2><i class="fas fa-mobile-alt" title="Mobile phone:"></i> </h2>+375-29-504-28-37</li>
+        <li><h2><i class="fas fa-envelope" title="Email:"></i> </h2>di.shykh@gmail.com</li>
+        <li><h2><i class="fab fa-github" title="Github:"></i> </h2><a href="https://github.com/di-shykh">https://github.com/di-shykh</a></li>
       </ul>
     </div>
   </header>
@@ -76,26 +76,26 @@
       <section id="code-example">
         <h2>Example of my code</h2>
           <pre>
-            <code>
-              const changeSlide=(direction,e)=>{
-                e.stopPropagation();
-                const sliderHeight=sliderContainer.clientHeight;
-                if(direction==='up'){
-                  activeSlideIndex++;
-                  if(activeSlideIndex>sliderLength-1){
-                    activeSlideIndex=0;
-                  }
-                }
-                else if(direction==='down'){
-                  activeSlideIndex--;
-                  if(activeSlideIndex<0){
-                    activeSlideIndex=sliderLength-1;
-                  }
-                }
-                slideRight.style.transform=`translateY(-${activeSlideIndex*sliderHeight}px)`;
-                slideLeft.style.transform=`translateY(${activeSlideIndex*sliderHeight}px)`;
-              }
-            </code>
+  <code>
+    const changeSlide=(direction,e)=>{
+      e.stopPropagation();
+      const sliderHeight=sliderContainer.clientHeight;
+      if(direction==='up'){
+        activeSlideIndex++;
+        if(activeSlideIndex>sliderLength-1){
+          activeSlideIndex=0;
+        }
+      }
+      else if(direction==='down'){
+        activeSlideIndex--;
+        if(activeSlideIndex<0){
+          activeSlideIndex=sliderLength-1;
+        }
+      }
+      slideRight.style.transform=`translateY(-${activeSlideIndex*sliderHeight}px)`;
+      slideLeft.style.transform=`translateY(${activeSlideIndex*sliderHeight}px)`;
+    }
+  </code>
           </pre>
       </section>
       <section id="professional-experience">
