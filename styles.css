@@ -42,6 +42,11 @@ body {
    margin: 0.5rem;
  }
  .contacts h2 { margin-bottom: 0.5rem; }
+ .contacts .icon {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
  /*styles for footer*/
  footer {
    background-color: rgba(231, 227, 227, 0.877);
