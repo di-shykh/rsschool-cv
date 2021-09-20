@@ -75,28 +75,28 @@
     <div class="professional-experience-wrap">
       <section id="code-example">
         <h2>Example of my code</h2>
-          <pre>
-  <code>
-    const changeSlide=(direction,e)=>{
-      e.stopPropagation();
-      const sliderHeight=sliderContainer.clientHeight;
-      if(direction==='up'){
-        activeSlideIndex++;
-        if(activeSlideIndex>sliderLength-1){
-          activeSlideIndex=0;
-        }
+        <pre>
+<code>
+  const changeSlide=(direction,e)=>{
+    e.stopPropagation();
+    const sliderHeight=sliderContainer.clientHeight;
+    if(direction==='up'){
+      activeSlideIndex++;
+      if(activeSlideIndex>sliderLength-1){
+        activeSlideIndex=0;
       }
-      else if(direction==='down'){
-        activeSlideIndex--;
-        if(activeSlideIndex<0){
-          activeSlideIndex=sliderLength-1;
-        }
-      }
-      slideRight.style.transform=`translateY(-${activeSlideIndex*sliderHeight}px)`;
-      slideLeft.style.transform=`translateY(${activeSlideIndex*sliderHeight}px)`;
     }
-  </code>
-          </pre>
+    else if(direction==='down'){
+      activeSlideIndex--;
+      if(activeSlideIndex&lt;0){
+        activeSlideIndex=sliderLength-1;
+      }
+    }
+    slideRight.style.transform=`translateY(-${activeSlideIndex*sliderHeight}px)`;
+    slideLeft.style.transform=`translateY(${activeSlideIndex*sliderHeight}px)`;
+  }
+</code>
+        </pre>
       </section>
       <section id="professional-experience">
         <h2>Professional experience:</h2>
